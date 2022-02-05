@@ -6,27 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
-stddef.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.c
+vector.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.h
+stdio.h
 -
-
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/ordered_array_set/ordered_array_set.c
-ordered_array_set.h
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/ordered_array_set/ordered_array_set.h
 malloc.h
 -
 
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/ordered_array_set/ordered_array_set.h
-stdint.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.h
+stdio.h
 -
-assert.h
+stdint.h
 -
 memory.h
 -
-stdio.h
+assert.h
 -
-stdbool.h
--
-../../algorithms/array/array.h
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
 
