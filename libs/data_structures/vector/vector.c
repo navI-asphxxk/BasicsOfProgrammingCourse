@@ -45,7 +45,7 @@ bool isEmpty(vector *v) {
 }
 
 bool isFull(vector *v) {
-    return v->size == v->capacity;
+    return v->size == v->capacity && v->capacity != 0;
 }
 
 int getVectorValue(vector *v, size_t i) {

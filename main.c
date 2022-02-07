@@ -2,6 +2,108 @@
 #include "libs/data_structures/vector/vector.h"
 
 
+// TEST CLEAR
+
+void test_clear_anyVector() {
+    vector v = {(int[]) {1, 2, 3}, 3, 4};
+    clear(&v);
+    assert(v.size == 0);
+    deleteVector(&v);
+}
+
+void test_clear_emptyVector() {
+    vector v = {(int[]) {}, 0, 0};
+    clear(&v);
+    assert(v.size == 0);
+    deleteVector(&v);
+}
+
+void test_clear() {
+    test_clear_anyVector();
+    test_clear_emptyVector();
+}
+
+
+// TEST SHRINKTOFIT
+
+void test_shrinkToFit_vector() {
+    vector v = createVector(3);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    shrinkToFit(&v);
+    assert(v.size == v.capacity);
+    deleteVector(&v);
+}
+
+void test_shrinkToFit_fullVector() {
+    vector v = createVector(2);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    shrinkToFit(&v);
+    assert(v.size == v.capacity);
+    deleteVector(&v);
+}
+
+void test_shrinkToFit(){
+    test_shrinkToFit_fullVector();
+    test_shrinkToFit_vector();
+}
+
+// TEST IS FULL
+
+void test_isFull_fullVector() {
+    vector v = {(int[]) {1, 2, 3}, 3, 3};
+    assert(isFull(&v));
+    deleteVector(&v);
+}
+
+void test_isFull_emptyVector1() {
+    vector v = {(int[]) {}, 0, 0};
+    assert(!isFull(&v));
+    deleteVector(&v);
+}
+
+void test_isFull_emptyVector2() {
+    vector v = {(int[]) {}, 0, 1};
+    assert(!isFull(&v));
+    deleteVector(&v);
+}
+
+void test_isFull() {
+    test_isFull_emptyVector1();
+    test_isFull_emptyVector2();
+    test_isFull_fullVector();
+
+}
+
+
+// TEST IS EMPTY
+
+void test_isEmpty_fullVector() {
+    vector v = {(int[]) {1, 2, 3}, 3, 3};
+    assert(!isEmpty(&v));
+    deleteVector(&v);
+}
+
+void test_isEmpty_emptyVector1() {
+    vector v = {(int[]) {}, 0, 0};
+    assert(isEmpty(&v));
+    deleteVector(&v);
+}
+
+void test_isEmpty_emptyVector2() {
+    vector v = {(int[]) {}, 0, 3};
+    assert(isEmpty(&v));
+    deleteVector(&v);
+}
+
+void test_isEmpty() {
+    test_isEmpty_fullVector();
+    test_isEmpty_emptyVector1();
+    test_isEmpty_emptyVector2();
+}
+
+
 // TEST PUSHBACK
 
 void test_pushBack_emptyVector() {
@@ -78,7 +180,7 @@ void test_getVectorValue() {
 
 //TEST POPBACK
 
-void test_popBack_notEmptyVector() {
+void test_popBack_notEmptyVector1() {
     vector v = createVector(0);
     pushBack(&v, 10);
     assert (v.size == 1);
@@ -86,6 +188,22 @@ void test_popBack_notEmptyVector() {
     popBack(&v);
     assert (v.size == 0);
     assert (v.capacity == 1);
+}
+
+void test_popBack_notEmptyVector2() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    popBack(&v);
+    vector expectedVector = {(int[]) {1}, 1, 2};
+    assert(vector_isEqual(&v, &expectedVector));
+    deleteVector(&v);
+    deleteVector(&expectedVector);
+}
+
+void test_popBack() {
+    test_popBack_notEmptyVector1();
+    test_popBack_notEmptyVector2();
 }
 
 
@@ -155,10 +273,15 @@ void test_front() {
 
 
 // TEST
+
 void test() {
+    test_clear();
+    test_shrinkToFit();
+    test_isEmpty();
+    test_isFull();
     test_pushBack();
     test_getVectorValue();
-    test_popBack_notEmptyVector();
+    test_popBack();
     test_atVector();
     test_back();
     test_front();
