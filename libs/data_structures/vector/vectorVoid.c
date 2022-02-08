@@ -32,10 +32,7 @@ void clearV(vectorVoid *v) {
 }
 
 void deleteVectorV(vectorVoid *v) {
-    if (v->data == NULL) {
-        free(v->data);
-        v->data = NULL;
-    }
+    free(v->data);
 }
 
 bool isEmptyV(vectorVoid *v) {

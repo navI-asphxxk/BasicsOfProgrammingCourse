@@ -66,5 +66,4 @@ void popBackV(vectorVoid *v);
 // если capacity = 0, то capacity + 1
 void pushBackV(vectorVoid *v, void *source);
 
-
 #endif
