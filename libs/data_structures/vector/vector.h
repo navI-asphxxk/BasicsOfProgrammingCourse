@@ -38,11 +38,11 @@ void shrinkToFit(vector *v);
 // освобождает память, выделенную вектору v
 void deleteVector(vector *v);
 
-// возвращает значение True, если вектор пустой
+// возвращает значение True, если вектор v пустой
 // иначе - False
 bool isEmpty(vector *v);
 
-// возвращает значение True, если вектор полный
+// возвращает значение True, если вектор v полный
 // иначе - False
 bool isFull(vector *v);
 
@@ -50,6 +50,8 @@ bool isFull(vector *v);
 int getVectorValue(vector *v, size_t i);
 
 // добавляет элемент x в конец вектора v
+// если массив полон, то capacity * 2
+// если capacity = 0, то capacity + 1
 void pushBack(vector *v, int x);
 
 // удаляет последний элемент из вектора v

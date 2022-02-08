@@ -11,6 +11,14 @@ limits.h
 -
 malloc.h
 -
+stdint.h
+-
+memory.h
+-
+assert.h
+-
+stdbool.h
+-
 
 C:/Users/maksi/CLionProjects/cource/main.c
 stdio.h
