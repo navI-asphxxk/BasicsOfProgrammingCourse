@@ -185,6 +185,12 @@
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/main.c">
 			<Option target="course"/>
 		</Unit>

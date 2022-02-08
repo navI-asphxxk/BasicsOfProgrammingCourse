@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.c
-vector.h
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.h
-stdio.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.c
+vectorVoid.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.h
+limits.h
 -
 malloc.h
--
-
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.h
-stdio.h
--
-stdint.h
--
-memory.h
--
-assert.h
--
-stdbool.h
 -
 
