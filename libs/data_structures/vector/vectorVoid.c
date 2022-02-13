@@ -66,7 +66,6 @@ void pushBackV(vectorVoid *v, void *source) {
         reserveV(v, 1);
     if (isFullV(v))
         reserveV(v, v->capacity * 2);
-    char *destination = (char *) v->data + v->size * v->baseTypeSize;
-    memcpy(destination, source, v->baseTypeSize);
     v->size++;
+    setVectorValueV(v, v->size - 1, source);
 }
