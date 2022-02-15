@@ -696,7 +696,7 @@ int getMin(int *a, int n) {
 
 // Упорядочивает столбцы матрицы по неубыванию
 // минимальных элементов столбцов
-void sortColsByMinElement(matrix m){
+void sortColsByMinElement(matrix m) {
     insertionSortColsMatrixByColCriteria(m, getMin);
 }
 
@@ -728,7 +728,12 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
 // возвращает True, если массив а размера n
 // уникальный, иначе - False
 bool isUnique(long long *a, int n) {
+    for (int i = 0; i < n; i++)
+        for (int j = i + 1; j < n; j++)
+            if (a[i] == a[j])
+                return false;
 
+    return true;
 }
 
 // Если среди сумм элементов строк матрицы m нет равных,
@@ -740,7 +745,6 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
     if (isUnique(arrayOfSums, m.nRows))
         transposeSquareMatrix(m);
 }
-
 
 
 int main() {
