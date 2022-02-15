@@ -700,6 +700,49 @@ void sortColsByMinElement(matrix m){
     insertionSortColsMatrixByColCriteria(m, getMin);
 }
 
+// умножает матрицу m1, m2
+matrix mulMatrices(matrix m1, matrix m2) {
+    matrix m = getMemMatrix(m1.nRows, m2.nCols);
+    if (m1.nCols != m2.nRows) {
+        fprintf(stderr, "cant mul ");
+        exit(1);
+    }
+    for (int i = 0; i < m1.nRows; i++) {
+        for (int j = 0; j < m2.nCols; j++) {
+            int element = 0;
+            int curIndex = 0;
+            for (int k = 0; k < m1.nCols; k++, curIndex++)
+                element += m1.values[curIndex][k] * m2.values[k][curIndex];
+            m.values[i][j] = element;
+        }
+    }
+    return (matrix) m;
+}
+
+// заменяет матрицу m на ее квадрат, если матрица симметрична
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (isSymmetricMatrix(*m))
+        *m = mulMatrices(*m, *m);
+}
+
+// возвращает True, если массив а размера n
+// уникальный, иначе - False
+bool isUnique(long long *a, int n) {
+
+}
+
+// Если среди сумм элементов строк матрицы m нет равных,
+// то транспонировать матрицу
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
+    long long arrayOfSums[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        arrayOfSums[i] = getSum(m.values[i], m.nCols);
+    if (isUnique(arrayOfSums, m.nRows))
+        transposeSquareMatrix(m);
+}
+
+
+
 int main() {
     /*matrix m = getMemMatrix(3, 3);
 
