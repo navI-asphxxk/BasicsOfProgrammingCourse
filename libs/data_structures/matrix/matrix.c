@@ -89,7 +89,7 @@ bool isSquareMatrix(matrix m) {
 }
 
 bool areTwoMatricesEqual(matrix m1, matrix m2) {
-    if (m1.nRows != m2.nRows || m1.nCols != m2.nRows)
+    if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
         return false;
     for (int i = 0; i < m1.nRows; i++)
         for (int j = 0; j < m1.nCols; j++)
@@ -151,7 +151,7 @@ position getMaxValuePos(matrix m) {
 }
 
 matrix createMatrixFromArray(const int *a,
-                             size_t nRows, size_t nCols) {
+                             int nRows, int nCols) {
     matrix m = getMemMatrix(nRows, nCols);
 
     int k = 0;
@@ -199,7 +199,7 @@ void insertionSortColsMatrixByColCriteria(matrix m,
     int additionalArray2[m.nCols];
     for (int i = 0; i < m.nCols; i++) {
         for (int j = 0; j < m.nRows; j++)
-            additionalArray1[i] = m.values[j][i];
+            additionalArray1[j] = m.values[j][i];
         additionalArray2[i] = criteria(additionalArray1, m.nRows);
     }
     for (size_t i = 1; i < m.nRows; i++) {
@@ -212,5 +212,5 @@ void insertionSortColsMatrixByColCriteria(matrix m,
         }
         additionalArray2[j] = t;
     }
-
 }
+

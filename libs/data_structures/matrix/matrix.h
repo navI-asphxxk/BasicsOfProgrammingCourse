@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <assert.h>
 
 typedef struct matrix {
     int **values;
@@ -86,8 +87,8 @@ position getMaxValuePos(matrix m);
 // возвращает матрицу, размера nRows на nCols,
 // построенного из элементов массива a,
 // размещенную в динамической памяти
-matrix createMatrixFromArray(const int *a, size_t nRows,
-                             size_t nCols);
+matrix createMatrixFromArray(const int *a, int nRows,
+                             int nCols);
 
 // возвращает указатель на нулевую матрицу массива
 // из nMatrices матриц, размещенных

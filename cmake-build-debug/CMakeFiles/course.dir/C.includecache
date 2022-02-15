@@ -13,6 +13,8 @@ malloc.h
 -
 stdbool.h
 -
+assert.h
+-
 
 C:/Users/maksi/CLionProjects/cource/main.c
 stdio.h
