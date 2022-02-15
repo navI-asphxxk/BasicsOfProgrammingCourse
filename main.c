@@ -39,9 +39,9 @@ void test_getMemArrayOfMatrices_zeroRowsAndCols() {
 }
 
 void test_getMemArrayOfMatrices_rowsAndCols() {
-    matrix *ms = getMemArrayOfMatrices(3, 4, 1);
+    matrix *ms = getMemArrayOfMatrices(3, 2, 1);
     for (size_t i = 0; i < 3; i++)
-        assert(ms[i].nRows == 4 && ms[i].nCols == 1 && ms[i].values != NULL);
+        assert(ms[i].nRows == 2 && ms[i].nCols == 1 && ms[i].values != NULL);
     assert(ms != NULL);
     freeMemMatrices(ms, 3);
 }
@@ -53,13 +53,11 @@ void test_getMemArrayOfMatrices() {
 
 // swapRows
 void test_swapRows_oneRow() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3},
                                       1, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1, 2, 3},
                                       1, 3);
     swapRows(m1, 0, 0);
     assert(areTwoMatricesEqual(m1, m2));
@@ -68,15 +66,13 @@ void test_swapRows_oneRow() {
 }
 
 void test_swapRows_twoRows() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                              3, 2, 1
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3,
+                                               3, 2, 1},
                                       2, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              3, 2, 1,
-                                              1, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {3, 2, 1,
+                                               1, 2, 3},
                                       2, 3);
     swapRows(m1, 0, 1);
     assert(areTwoMatricesEqual(m1, m2));
@@ -85,17 +81,15 @@ void test_swapRows_twoRows() {
 }
 
 void test_swapRows_manyRows() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                              4, 5, 6,
-                                              7, 8, 9
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3,
+                                               4, 5, 6,
+                                               7, 8, 9},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              7, 8, 9,
-                                              4, 5, 6,
-                                              1, 2, 3,
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {7, 8, 9,
+                                               4, 5, 6,
+                                               1, 2, 3},
                                       3, 3);
     swapRows(m1, 0, 2);
     assert(areTwoMatricesEqual(m1, m2));
@@ -112,17 +106,15 @@ void test_swapRows() {
 // swapColumns
 
 void test_swapColumns_oneColumn() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1,
-                                              2,
-                                              3
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1,
+                                               2,
+                                               3},
                                       3, 1);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1,
-                                              2,
-                                              3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1,
+                                               2,
+                                               3},
                                       3, 1);
     swapColumns(m1, 0, 0);
     assert(areTwoMatricesEqual(m1, m2));
@@ -131,17 +123,15 @@ void test_swapColumns_oneColumn() {
 }
 
 void test_swapColumns_twoColumns() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 4,
-                                              2, 5,
-                                              3, 6
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 4,
+                                               2, 5,
+                                               3, 6},
                                       3, 2);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              4, 1,
-                                              5, 2,
-                                              6, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {4, 1,
+                                               5, 2,
+                                               6, 3},
                                       3, 2);
     swapColumns(m1, 0, 1);
     assert(areTwoMatricesEqual(m1, m2));
@@ -150,17 +140,15 @@ void test_swapColumns_twoColumns() {
 }
 
 void test_swapColumns_manyColumns() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 4, 7,
-                                              2, 5, 8,
-                                              3, 6, 9
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 4, 7,
+                                               2, 5, 8,
+                                               3, 6, 9},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              7, 4, 1,
-                                              8, 5, 2,
-                                              9, 6, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {7, 4, 1,
+                                               8, 5, 2,
+                                               9, 6, 3},
                                       3, 3);
     swapColumns(m1, 0, 2);
     assert(areTwoMatricesEqual(m1, m2));
@@ -177,13 +165,11 @@ void test_swapColumns() {
 // insertionSortRowsMatrixByRowCriteria
 
 void test_insertionSortRowsMatrixByRowCriteria_oneRow() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3},
                                       1, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1, 2, 3},
                                       1, 3);
     insertionSortRowsMatrixByRowCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -192,15 +178,13 @@ void test_insertionSortRowsMatrixByRowCriteria_oneRow() {
 }
 
 void test_insertionSortRowsMatrixByRowCriteria_twoRows() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 3, 3,
-                                              2, 2, 2
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {3, 3, 3,
+                                               2, 2, 2},
                                       2, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 2, 2,
-                                              3, 3, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {2, 2, 2,
+                                               3, 3, 3},
                                       2, 3);
     insertionSortRowsMatrixByRowCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -209,17 +193,15 @@ void test_insertionSortRowsMatrixByRowCriteria_twoRows() {
 }
 
 void test_insertionSortRowsMatrixByRowCriteria_manyRows() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 3, 3,
-                                              2, 2, 2,
-                                              2, 2, 2
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {5, 1, 1,
+                                               2, 2, 2,
+                                               2, 2, 2},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 2, 2,
-                                              2, 2, 2,
-                                              3, 3, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {2, 2, 2,
+                                               2, 2, 2,
+                                               5, 1, 1},
                                       3, 3);
     insertionSortRowsMatrixByRowCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -236,17 +218,15 @@ void test_insertionSortRowsMatrixByRowCriteria() {
 // insertionSortColsMatrixByColCriteria
 
 void test_insertionSortColsMatrixByColCriteria_oneCol() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1,
-                                              2,
-                                              3
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1,
+                                               2,
+                                               3},
                                       3, 1);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1,
-                                              2,
-                                              3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1,
+                                               2,
+                                               3},
                                       3, 1);
     insertionSortColsMatrixByColCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -255,18 +235,15 @@ void test_insertionSortColsMatrixByColCriteria_oneCol() {
 }
 
 void test_insertionSortColsMatrixByColCriteria_twoCols() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 2,
-                                              3, 2,
-                                              3, 2
-
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {3, 2,
+                                               3, 2,
+                                               3, 2},
                                       3, 2);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 3,
-                                              2, 3,
-                                              2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {2, 3,
+                                               2, 3,
+                                               2, 3},
                                       3, 2);
     insertionSortColsMatrixByColCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -275,17 +252,14 @@ void test_insertionSortColsMatrixByColCriteria_twoCols() {
 }
 
 void test_insertionSortColsMatrixByColCriteria_manyCols() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 2, 2,
-                                              3, 2, 2,
-                                              3, 2, 2
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 2,
+                                               1, 2, 2,
+                                               1, 2, 2},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 2, 3,
-                                              2, 2, 3,
-                                              2, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[]) {2, 2, 1,
+                                               2, 2, 1,
+                                               2, 2, 1},
                                       3, 3);
     insertionSortColsMatrixByColCriteria(m1, getSum);
     assert(areTwoMatricesEqual(m1, m2));
@@ -302,21 +276,19 @@ void test_insertionSortColsMatrixByColCriteria() {
 // isSquareMatrix
 
 void test_isSquareMatrix_squareM() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 2, 2,
-                                             3, 1, 2,
-                                             3, 2, 1
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 2, 2,
+                                              3, 1, 2,
+                                              3, 2, 1},
                                      3, 3);
     assert(isSquareMatrix(m));
     freeMemMatrix(&m);
 }
 
 void test_isSquareMatrix_notSquareM() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 2, 1,
-                                             2, 1, 2,
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 2, 1,
+                                              2, 1, 2},
                                      2, 3);
     assert(!isSquareMatrix(m));
     freeMemMatrix(&m);
@@ -330,18 +302,15 @@ void test_isSquareMatrix() {
 // areTwoMatricesEqual
 
 void test_areTwoMatricesEqual_equal() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 2, 1,
-                                              3, 2, 1,
-                                              3, 2, 1
-
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {3, 2, 1,
+                                               3, 2, 1,
+                                               3, 2, 1},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              3, 2, 1,
-                                              3, 2, 1,
-                                              3, 2, 1
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {3, 2, 1,
+                                               3, 2, 1,
+                                               3, 2, 1},
                                       3, 3);
     assert(areTwoMatricesEqual(m1, m2));
     freeMemMatrix(&m1);
@@ -349,17 +318,15 @@ void test_areTwoMatricesEqual_equal() {
 }
 
 void test_areTwoMatricesEqual_notEqual1() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 2, 2,
-                                              3, 2, 2,
-                                              3, 2, 2
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 2,
+                                               1, 2, 2,
+                                               1, 2, 2},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 2, 3,
-                                              2, 2, 3,
-                                              2, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {2, 2, 1,
+                                               2, 2, 1,
+                                               2, 2, 1},
                                       3, 3);
     assert(!areTwoMatricesEqual(m1, m2));
     freeMemMatrix(&m1);
@@ -367,16 +334,14 @@ void test_areTwoMatricesEqual_notEqual1() {
 }
 
 void test_areTwoMatricesEqual_notEqual2() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              3, 2, 2,
-                                              3, 2, 2,
-                                              3, 2, 2
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 2,
+                                               1, 2, 2,
+                                               1, 2, 2},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              2, 2, 3,
-                                              2, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {2, 2, 1,
+                                               2, 2, 1},
                                       2, 3);
     assert(!areTwoMatricesEqual(m1, m2));
     freeMemMatrix(&m1);
@@ -392,22 +357,20 @@ void test_areTwoMatricesEqual() {
 // isEMatrix
 
 void test_isEMatrix_identity() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 0, 0,
-                                             0, 1, 0,
-                                             0, 0, 1
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 0, 0,
+                                              0, 1, 0,
+                                              0, 0, 1},
                                      3, 3);
     assert(isEMatrix(m));
     freeMemMatrix(&m);
 }
 
 void test_isEMatrix_notIdentity() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 0, 1,
-                                             0, 1, 0,
-                                             1, 0, 1
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 0, 1,
+                                              0, 1, 0,
+                                              1, 0, 1},
                                      3, 3);
     assert(!isEMatrix(m));
     freeMemMatrix(&m);
@@ -421,22 +384,20 @@ void test_isEMatrix() {
 // isSymmetricMatrix
 
 void test_isSymmetricMatrix_symmetric() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 0, 0,
-                                             0, 1, 0,
-                                             0, 0, 1
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 0, 0,
+                                              0, 1, 0,
+                                              0, 0, 1},
                                      3, 3);
     assert(isSymmetricMatrix(m));
     freeMemMatrix(&m);
 }
 
 void test_isSymmetricMatrix_notSymmetric() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             5, 4, 3,
-                                             0, 5, 0,
-                                             5, 4, 5
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {5, 4, 3,
+                                              0, 5, 0,
+                                              5, 4, 5},
                                      3, 3);
     assert(!isSymmetricMatrix(m));
     freeMemMatrix(&m);
@@ -450,13 +411,11 @@ void test_isSymmetricMatrix() {
 // transposeSquareMatrix
 
 void test_transposeSquareMatrix_oneRowAndCol() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1},
                                       1, 1);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1},
                                       1, 1);
     transposeSquareMatrix(m1);
     assert(areTwoMatricesEqual(m1, m2));
@@ -465,17 +424,15 @@ void test_transposeSquareMatrix_oneRowAndCol() {
 }
 
 void test_transposeSquareMatrix_manyRowsAndCols() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                              1, 2, 3,
-                                              1, 2, 3
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3,
+                                               1, 2, 3,
+                                               1, 2, 3},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1, 1, 1,
-                                              2, 2, 2,
-                                              3, 3, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1, 1, 1,
+                                               2, 2, 2,
+                                               3, 3, 3},
                                       3, 3);
     transposeSquareMatrix(m1);
     assert(areTwoMatricesEqual(m1, m2));
@@ -484,17 +441,15 @@ void test_transposeSquareMatrix_manyRowsAndCols() {
 }
 
 void test_transposeSquareMatrix_twoTransposes() {
-    matrix m1 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                              1, 2, 3,
-                                              1, 2, 3
-                                      },
+    matrix m1 = createMatrixFromArray((int[])
+                                              {1, 2, 3,
+                                               1, 2, 3,
+                                               1, 2, 3},
                                       3, 3);
-    matrix m2 = createMatrixFromArray((int[]) {
-                                              1, 2, 3,
-                                              1, 2, 3,
-                                              1, 2, 3
-                                      },
+    matrix m2 = createMatrixFromArray((int[])
+                                              {1, 2, 3,
+                                               1, 2, 3,
+                                               1, 2, 3},
                                       3, 3);
     transposeSquareMatrix(m1);
     transposeSquareMatrix(m1);
@@ -512,9 +467,8 @@ void test_transposeSquareMatrix() {
 // getMinValuePos
 
 void test_getMinValuePos_oneElement() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             5
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1},
                                      1, 1);
     position p = getMinValuePos(m);
     assert(p.rowIndex == 0 && p.colIndex == 0);
@@ -522,11 +476,10 @@ void test_getMinValuePos_oneElement() {
 }
 
 void test_getMinValuePos_manyElements1() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 2, 3,
-                                             1, 2, 3,
-                                             1, 2, 3
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 2, 3,
+                                              1, 2, 3,
+                                              1, 2, 3},
                                      3, 3);
     position p = getMinValuePos(m);
     assert(p.rowIndex == 0 && p.colIndex == 0);
@@ -534,11 +487,10 @@ void test_getMinValuePos_manyElements1() {
 }
 
 void test_getMinValuePos_manyElements2() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             2, 2, 3,
-                                             5, 2, 3,
-                                             1, 2, 3
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {2, 2, 3,
+                                              5, 2, 3,
+                                              1, 2, 3},
                                      3, 3);
     position p = getMinValuePos(m);
     assert(p.rowIndex == 2 && p.colIndex == 0);
@@ -554,9 +506,8 @@ void test_getMinValuePos() {
 // getMaxValuePos
 
 void test_getMaxValuePos_oneElement() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             5
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {5},
                                      1, 1);
     position p = getMaxValuePos(m);
     assert(p.rowIndex == 0 && p.colIndex == 0);
@@ -564,11 +515,10 @@ void test_getMaxValuePos_oneElement() {
 }
 
 void test_getMaxValuePos_manyElements1() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             1, 2, 3,
-                                             1, 2, 3,
-                                             1, 2, 3
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {1, 2, 3,
+                                              1, 2, 3,
+                                              1, 2, 3},
                                      3, 3);
     position p = getMaxValuePos(m);
     assert(p.rowIndex == 0 && p.colIndex == 2);
@@ -576,11 +526,10 @@ void test_getMaxValuePos_manyElements1() {
 }
 
 void test_getMaxValuePos_manyElements2() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             2, 2, 3,
-                                             5, 2, 3,
-                                             1, 2, 3
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {2, 2, 3,
+                                              5, 2, 3,
+                                              1, 2, 3},
                                      3, 3);
     position p = getMaxValuePos(m);
     assert(p.rowIndex == 1 && p.colIndex == 0);
@@ -596,20 +545,18 @@ void test_getMaxValuePos() {
 // createMatrixFromArray
 
 void test_createMatrixFromArray_zeroRowsAndCols() {
-    matrix m = createMatrixFromArray((int[]) {
-
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {},
                                      0, 0);
     assert(m.nRows == 0 && m.nCols == 0);
     freeMemMatrix(&m);
 }
 
 void test_createMatrixFromArray_manyRowsAndCols() {
-    matrix m = createMatrixFromArray((int[]) {
-                                             2, 2, 3,
-                                             5, 2, 3,
-                                             1, 2, 3
-                                     },
+    matrix m = createMatrixFromArray((int[])
+                                             {2, 2, 3,
+                                              5, 2, 3,
+                                              1, 2, 3},
                                      3, 3);
     assert(m.nRows == 3 && m.nCols == 3);
     freeMemMatrix(&m);
@@ -623,14 +570,16 @@ void test_createMatrixFromArray() {
 
 // createArrayOfMatrixFromArray
 void test_createArrayOfMatrixFromArray_zeroRowsAndCols() {
-    matrix *ms = createArrayOfMatrixFromArray((int[]) {}, 3, 0, 0);
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {},
+                                              3, 0, 0);
     for (size_t i = 0; i < 3; i++)
         assert(ms[i].nRows == 0 && ms[i].nCols == 0);
     freeMemMatrices(ms, 3);
 }
 
 void test_createArrayOfMatrixFromArray_manyRowsAndCols() {
-    matrix *ms = createArrayOfMatrixFromArray((int[]) {}, 3, 2, 2);
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {},
+                                              3, 2, 2);
     for (size_t i = 0; i < 3; i++)
         assert(ms[i].nRows == 2 && ms[i].nCols == 2);
     freeMemMatrices(ms, 3);
@@ -746,6 +695,12 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
         transposeSquareMatrix(m);
 }
 
+// возвращает true, если матрицы m1 и m2
+// взаимообратные, иначе - false
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    matrix m = mulMatrices(m1, m2);
+    return isEMatrix(m);
+}
 
 int main() {
     /*matrix m = getMemMatrix(3, 3);
