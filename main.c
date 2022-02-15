@@ -670,8 +670,6 @@ void swapRowsWithMinAndMaxElements(matrix m) {
     swapRows(m, maxPos.rowIndex, minPos.colIndex);
 }
 
-// упорядочивает строки матрицы m по
-// неубыванию наибольших элементов строк
 int getMax(int *a, int n) {
     int max = a[0];
     for (int i = 0; i < n; i++)
@@ -681,11 +679,26 @@ int getMax(int *a, int n) {
     return max;
 }
 
+// упорядочивает строки матрицы m по
+// неубыванию наибольших элементов строк
 void sortRowsByMinElement(matrix m) {
     insertionSortRowsMatrixByRowCriteria(m, getMax);
 }
 
+int getMin(int *a, int n) {
+    int min = a[0];
+    for (int i = 0; i < n; i++)
+        if (a[i] < min)
+            min = a[i];
 
+    return min;
+}
+
+// Упорядочивает столбцы матрицы по неубыванию
+// минимальных элементов столбцов
+void sortColsByMinElement(matrix m){
+    insertionSortColsMatrixByColCriteria(m, getMin);
+}
 
 int main() {
     /*matrix m = getMemMatrix(3, 3);
