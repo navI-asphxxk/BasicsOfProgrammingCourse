@@ -813,7 +813,7 @@ int countEqClassesByRowsSum(matrix m) {
 }
 
 int getNSpecialElement(matrix m) {
-    int nSpecialElement= 0;
+    int nSpecialElement = 0;
     for (int i = 0; i < m.nCols; i++) {
         long long sumOfCol = 0;
         long long maxOfCol = m.values[0][i];
@@ -830,6 +830,18 @@ int getNSpecialElement(matrix m) {
 
     return nSpecialElement;
 }
+
+void swapPenultimateRow(matrix m) {
+    if (m.nRows <= 1)
+        printf("No Penultimate Row");
+    else {
+        position minPos = getMinValuePos(m);
+        for (int i = 0; i < m.nRows; i++)
+            m.values[m.nRows - 2][i] = m.values[i][minPos.colIndex];
+    }
+}
+
+
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {
@@ -887,13 +899,8 @@ int main() {
 
     outputMatrix(m);*/
 
-    //test();
-    //test_findSumOfMaxesOfPseudoDiagonal();
-
-    matrix m = getMemMatrix(6, 2);
-    inputMatrix(m);
-
-    printf("%d", countEqClassesByRowsSum(m));
+    test();
+    test_findSumOfMaxesOfPseudoDiagonal();
 
     return 0;
 }
