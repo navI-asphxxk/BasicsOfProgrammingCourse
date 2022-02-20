@@ -832,15 +832,44 @@ int getNSpecialElement(matrix m) {
 }
 
 void swapPenultimateRow(matrix m) {
-    if (m.nRows <= 1)
-        printf("No Penultimate Row");
-    else {
-        position minPos = getMinValuePos(m);
-        for (int i = 0; i < m.nRows; i++)
-            m.values[m.nRows - 2][i] = m.values[i][minPos.colIndex];
+    if (m.nRows <= 1) {
+        fprintf(stderr, "few rows\n");
+        exit(3);
     }
+
+    position posMin = getMinValuePos(m);
+    int firsRowElement = m.values[m.nRows - 2][posMin.colIndex];
+    for (size_t i = 0; i < m.nRows; i++)
+        m.values[m.nRows - 2][i] = m.values[i][posMin.colIndex];
+
+    m.values[m.nRows - 2][m.nCols - 2] = firsRowElement;
 }
 
+
+bool isNonDescendingSorted(int *a, int n) {
+    for (int i = 1; i < n; i++)
+        if (a[i] < a[i - 1])
+            return false;
+
+    return true;
+}
+
+bool hasAllNonDescendingRows(matrix m) {
+    for (int i = 0; i < m.nRows; i++)
+        if (!isNonDescendingSorted(m.values[i], m.nCols))
+            return false;
+
+    return true;
+}
+
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
+    int countMatrices = 0;
+    for (int i = 0; i < nMatrix; i++)
+        if (hasAllNonDescendingRows(ms[i]))
+            countMatrices++;
+
+    return countMatrices;
+}
 
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
