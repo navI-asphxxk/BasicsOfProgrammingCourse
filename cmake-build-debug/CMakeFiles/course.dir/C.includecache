@@ -19,6 +19,10 @@ stdbool.h
 -
 assert.h
 -
+math.h
+-
+stdlib.h
+-
 
 C:/Users/maksi/CLionProjects/cource/main.c
 stdio.h

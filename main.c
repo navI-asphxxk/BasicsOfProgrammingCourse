@@ -711,7 +711,7 @@ int max(int a, int b) {
 // возвращает сумму максимальных элементов
 // всех псевдодиагоналей данной матрицы
 long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
-    int n = m.nRows + m.nCols - 2;
+    int n = m.nRows + m.nCols - 1;
     int maxesOfPseudodiagonals[n];
 
     for (size_t i = 0; i < n; i++)
@@ -721,10 +721,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
     for (int i = 0; i < m.nRows; i++)
         for (int j = 0; j < m.nCols; j++)
             if (j != i) {
-                if (i > j)
-                    indexPdDiagonalElement = j - i + m.nRows - 1;
-                else
-                    indexPdDiagonalElement = j - i + m.nRows - 2;
+                indexPdDiagonalElement = j - i + m.nRows - 1;
                 maxesOfPseudodiagonals[indexPdDiagonalElement] =
                         max(maxesOfPseudodiagonals[indexPdDiagonalElement], m.values[i][j]);
             }
@@ -754,9 +751,6 @@ int getMinInArea(matrix m) {
 }
 
 
-// возвращает расстояние от точки, координаты которой
-// записаны в массиве a размера n,
-// до начала координат
 double getDistance(int *a, int n) {
     double sum = 0;
     for (int i = 0; i < n; i++)
@@ -765,9 +759,60 @@ double getDistance(int *a, int n) {
     return sqrt(sum);
 }
 
-void sortByDistances(matrix m) {
-    insertionSortRowsMatrixByRowCriteria(m, getDistance);
+void insertionSortRowsMatrixByRowCriteriaF(matrix m,
+                                           float (*criteria)(int *, int)) {
+    float additionalArray[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        additionalArray[i] = criteria(m.values[i], m.nCols);
+    for (size_t i = 1; i < m.nRows; i++) {
+        float t = additionalArray[i];
+        int j = i;
+        while (j > 0 && additionalArray[j - 1] > t) {
+            additionalArray[j] = additionalArray[j - 1];
+            swapRows(m, j, j - 1);
+            j--;
+        }
+        additionalArray[j] = t;
+    }
 }
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
+
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const long long *) pa;
+    long long arg2 = *(const long long *) pb;
+
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+}
+
+int countNUnique(long long *a, int n) {
+    qsort(a, n, sizeof(long long), cmp_long_long);
+    int countUnique = 1;
+
+    for (int i = 1; i < n; i++)
+        if (a[i] != a[i - 1])
+            countUnique++;
+
+    return countUnique;
+}
+
+int countEqClassesByRowsSum(matrix m) {
+    long long additionalArray[m.nRows];
+    for (int i = 0; i < m.nRows; i++) {
+        int sumOfRow = 0;
+        for (int j = 0; j < m.nCols; j++)
+            sumOfRow += m.values[i][j];
+        additionalArray[i] = sumOfRow;
+    }
+
+    return countNUnique(additionalArray, m.nRows);
+}
+
+
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {
@@ -826,7 +871,12 @@ int main() {
     outputMatrix(m);*/
 
     //test();
-    test_findSumOfMaxesOfPseudoDiagonal();
+    //test_findSumOfMaxesOfPseudoDiagonal();
+
+    matrix m = getMemMatrix(6, 2);
+    inputMatrix(m);
+
+    printf("%d", countEqClassesByRowsSum(m));
 
     return 0;
 }
