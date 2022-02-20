@@ -754,6 +754,20 @@ int getMinInArea(matrix m) {
 }
 
 
+// возвращает расстояние от точки, координаты которой
+// записаны в массиве a размера n,
+// до начала координат
+double getDistance(int *a, int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += pow(a[i], 2);
+
+    return sqrt(sum);
+}
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteria(m, getDistance);
+}
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {

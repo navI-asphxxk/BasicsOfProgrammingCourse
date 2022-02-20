@@ -5,6 +5,7 @@
 #include <malloc.h>
 #include <stdbool.h>
 #include <assert.h>
+#include <math.h>
 
 typedef struct matrix {
     int **values;
