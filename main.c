@@ -812,7 +812,24 @@ int countEqClassesByRowsSum(matrix m) {
     return countNUnique(additionalArray, m.nRows);
 }
 
+int getNSpecialElement(matrix m) {
+    int nSpecialElement= 0;
+    for (int i = 0; i < m.nCols; i++) {
+        long long sumOfCol = 0;
+        long long maxOfCol = m.values[0][i];
 
+        for (int j = 0; j < m.nRows; j++) {
+            sumOfCol += m.values[i][j];
+            if (maxOfCol < m.values[i][j])
+                maxOfCol = m.values[i][j];
+        }
+
+        if (maxOfCol > sumOfCol - maxOfCol)
+            nSpecialElement++;
+    }
+
+    return nSpecialElement;
+}
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {
