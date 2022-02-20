@@ -136,3 +136,11 @@ int binarySearchLessOrEqual_(const int *a, const int n, const int x) {
     return left;
 }
 
+int getSum_(const int *a, const int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
+
+    return sum;
+}
+

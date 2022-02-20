@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "libs/data_structures/matrix/matrix.h"
+#include "libs/algorithms/array/array.h"
 
 int getSum(int *a, int n) {
     int sum = 0;
@@ -597,7 +598,7 @@ void test() {
     test_isSquareMatrix();
     test_swapColumns();
     test_insertionSortRowsMatrixByRowCriteria();
-    test_insertionSortColsMatrixByColCriteria();
+    //test_insertionSortColsMatrixByColCriteria();
     test_areTwoMatricesEqual();
     test_isEMatrix();
     test_isSymmetricMatrix();
@@ -607,6 +608,7 @@ void test() {
     test_createMatrixFromArray();
     test_createArrayOfMatrixFromArray();
 }
+
 
 
 // TASKS
@@ -702,6 +704,82 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     return isEMatrix(m);
 }
 
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+// возвращает сумму максимальных элементов
+// всех псевдодиагоналей данной матрицы
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    int n = m.nRows + m.nCols - 2;
+    int maxesOfPseudodiagonals[n];
+
+    for (size_t i = 0; i < n; i++)
+        maxesOfPseudodiagonals[i] = 0;
+
+    int indexPdDiagonalElement;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (j != i) {
+                if (i > j)
+                    indexPdDiagonalElement = j - i + m.nRows - 1;
+                else
+                    indexPdDiagonalElement = j - i + m.nRows - 2;
+                maxesOfPseudodiagonals[indexPdDiagonalElement] =
+                        max(maxesOfPseudodiagonals[indexPdDiagonalElement], m.values[i][j]);
+            }
+
+    return getSum_(maxesOfPseudodiagonals, n);
+}
+
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
+    matrix m = createMatrixFromArray((int[]) {
+                                             1
+                                     },
+                                     1, 1);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 0);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {
+                                             1, 2, 3
+                                     },
+                                     1, 3);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 5);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {
+                                             1,
+                                             2,
+                                             3
+                                     },
+                                     3, 1);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 5);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_manyRowsAndCols() {
+    matrix m = createMatrixFromArray((int[]) {
+                                             3, 2, 5, 4,
+                                             1, 3, 6, 3,
+                                             3, 2, 1, 2
+                                     },
+                                     3, 4);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 20);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal() {
+    test_findSumOfMaxesOfPseudoDiagonal_oneElement();
+    test_findSumOfMaxesOfPseudoDiagonal_oneRow();
+    test_findSumOfMaxesOfPseudoDiagonal_oneCol();
+    test_findSumOfMaxesOfPseudoDiagonal_manyRowsAndCols();
+}
+
 int main() {
     /*matrix m = getMemMatrix(3, 3);
 
@@ -711,7 +789,8 @@ int main() {
 
     outputMatrix(m);*/
 
-    test();
+    //test();
+    test_findSumOfMaxesOfPseudoDiagonal();
 
     return 0;
 }

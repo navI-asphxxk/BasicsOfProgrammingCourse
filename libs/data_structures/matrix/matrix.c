@@ -111,8 +111,8 @@ bool isEMatrix(matrix m) {
 
 bool isSymmetricMatrix(matrix m) {
     for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nCols; j++)
-            if (i != j && m.values[i][j] != m.values[j][i])
+        for (int j = i + 1; j < m.nCols; j++)
+            if (m.values[i][j] != m.values[j][i])
                 return false;
 
     return true;

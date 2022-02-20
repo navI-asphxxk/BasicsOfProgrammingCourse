@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
+stddef.h
+-
+
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.h
 stdio.h
 -
@@ -21,4 +25,6 @@ stdio.h
 -
 libs/data_structures/matrix/matrix.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.h
+libs/algorithms/array/array.h
+C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
 

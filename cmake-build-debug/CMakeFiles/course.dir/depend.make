@@ -11,5 +11,6 @@ CMakeFiles/course.dir/libs/data_structures/bitset/bitset.c.obj: \
  ../libs/data_structures/bitset/bitset.c \
  ../libs/data_structures/bitset/bitset.h
 CMakeFiles/course.dir/main.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/matrix/matrix.h \
  ../main.c
