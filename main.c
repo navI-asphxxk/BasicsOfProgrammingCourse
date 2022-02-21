@@ -905,6 +905,36 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
             outputMatrix(ms[i]);
 }
 
+double getAbsoluteMax(matrixf m) {
+    double maxRate = fabs(m.values[0][0]);
+    for (size_t i = 0; i < m.nRows; i++) {
+        for (size_t j = 0; j < m.nCols; j++) {
+            double possibleMaxRate = fabs(m.values[i][j]);
+            if (possibleMaxRate > maxRate)
+                maxRate = possibleMaxRate;
+        }
+    }
+
+    return maxRate;
+}
+
+void printMatrixWithMaxRate(matrixf *ms, int nMatrix) {
+    double minRate = getAbsoluteMax(ms[0]);
+    double maxRatesMatrix[nMatrix];
+    maxRatesMatrix[0] = minRate;
+    for (size_t i = 1; i < nMatrix; i++) {
+        double maxRate = getAbsoluteMax(ms[i]);
+        maxRatesMatrix[i] = maxRate;
+        if (maxRate < minRate)
+            minRate = maxRate;
+    }
+
+    for (size_t i = 0; i < nMatrix; i++) {
+        if (fabs(maxRatesMatrix[i] - minRate) < DBL_EPSILON)
+            outputMatrixF(ms[i]);
+    }
+}
+
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {

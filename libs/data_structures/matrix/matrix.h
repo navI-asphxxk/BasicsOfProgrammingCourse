@@ -7,12 +7,19 @@
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>
+#include <float.h>
 
 typedef struct matrix {
     int **values;
     int nRows;
     int nCols;
 } matrix;
+
+typedef struct matrixf {
+    double **values; // элементы матрицы
+    int nRows;    // количество рядов
+    int nCols;    // количество столбцов
+} matrixf;
 
 typedef struct position {
     int rowIndex;
@@ -110,5 +117,20 @@ void insertionSortRowsMatrixByRowCriteria(matrix m,
 // для столбцов
 void insertionSortColsMatrixByColCriteria(matrix m,
                                           int (*criteria)(int*, int));
+
+matrixf createMatrixFromArrayF(const double *a,
+                               int nRows, int nCols);
+
+matrixf *createArrayOfMatrixFromArrayF(const double *values,
+                                       int nMatrices, int nRows, int nCols);
+
+matrixf getMemMatrixF(int nRows, int nCols);
+
+matrixf *getMemArrayOfMatricesF(int nMatrices,
+                                int nRows, int nCols);
+
+void outputMatrixF(matrixf m);
+
+
 
 #endif
