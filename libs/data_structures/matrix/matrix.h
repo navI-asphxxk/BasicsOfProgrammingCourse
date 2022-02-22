@@ -131,6 +131,6 @@ matrixf *getMemArrayOfMatricesF(int nMatrices,
 
 void outputMatrixF(matrixf m);
 
-
+void freeMemMatrixF(matrix *m);
 
 #endif

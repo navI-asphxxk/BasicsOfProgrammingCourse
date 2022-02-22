@@ -23,6 +23,8 @@ math.h
 -
 stdlib.h
 -
+float.h
+-
 
 C:/Users/maksi/CLionProjects/cource/main.c
 stdio.h

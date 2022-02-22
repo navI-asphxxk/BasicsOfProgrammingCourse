@@ -264,3 +264,11 @@ void outputMatrixF(matrixf m) {
     }
     printf("\n");
 }
+
+void freeMemMatrixF(matrix *m) {
+    for (int i = 0; i < m->nRows; i++)
+        free(m->values[i]);
+    free(m->values);
+    m->nCols = 0;
+    m->nRows = 0;
+}
