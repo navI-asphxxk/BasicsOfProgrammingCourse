@@ -935,6 +935,30 @@ void printMatrixWithMaxRate(matrixf *ms, int nMatrix) {
     }
 }
 
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+
+int getNSpecialElement2(matrix m) {
+    int countSpecialEl = 0;
+    for (int i = 0; i < m.nRows; i++) {
+        for (int j = 0; j < m.nCols; j++) {
+            bool isSpecialElement = true;
+            for (size_t k = 0; k < m.nCols; k++) {
+                if (k < j) {
+                    if (m.values[i][j] <= m.values[i][k])
+                        isSpecialElement = false;
+                } else if (k > j)
+                    if (m.values[i][j] > m.values[i][k])
+                        isSpecialElement = false;
+            }
+            countSpecialEl += isSpecialElement;
+        }
+    }
+
+    return countSpecialEl;
+}
+
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
     matrix m = createMatrixFromArray((int[]) {
