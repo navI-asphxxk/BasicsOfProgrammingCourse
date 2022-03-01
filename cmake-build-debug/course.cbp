@@ -263,8 +263,9 @@
 			<Option target="data_structures"/>
 			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeExtraSpaces.h">
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h">
 			<Option target="data_structures"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h">
 			<Option target="data_structures"/>

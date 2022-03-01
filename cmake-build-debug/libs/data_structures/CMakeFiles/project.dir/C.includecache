@@ -11,6 +11,10 @@ stdio.h
 -
 string/string_.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+string/tasks/removeNonLetters.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h
+string/tasks/removeAdjacentEqualLetters.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 stdio.h
@@ -21,4 +25,8 @@ ctype.h
 -
 memory.h
 -
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h
 
