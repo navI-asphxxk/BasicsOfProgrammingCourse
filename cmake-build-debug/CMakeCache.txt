@@ -230,6 +230,12 @@ course_BINARY_DIR:STATIC=C:/Users/maksi/CLionProjects/cource/cmake-build-debug
 //Value Computed by CMake
 course_SOURCE_DIR:STATIC=C:/Users/maksi/CLionProjects/cource
 
+//Value Computed by CMake
+project_BINARY_DIR:STATIC=C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures
+
+//Value Computed by CMake
+project_SOURCE_DIR:STATIC=C:/Users/maksi/CLionProjects/cource/libs/data_structures
+
 
 ########################
 # INTERNAL cache entries

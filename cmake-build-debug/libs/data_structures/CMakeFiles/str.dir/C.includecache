@@ -6,10 +6,8 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/maksi/CLionProjects/cource/libs/data_structures/main.c
-stdio.h
--
-string/string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.c
+string_.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h

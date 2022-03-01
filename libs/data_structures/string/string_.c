@@ -99,3 +99,10 @@ void assertString(const char *expected, char *got,
     } else
         fprintf(stderr, "%s - OK\n", funcName);
 }
+
+char *getEndOfString(char *begin) {
+    while (*begin != '\0')
+        begin++;
+
+    return begin;
+}

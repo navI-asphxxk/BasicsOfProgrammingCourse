@@ -6,6 +6,10 @@
 #include <ctype.h>
 #include <memory.h>
 
+#define ASSERT_STRING(expected, got) assertString( expected , got , \
+__FILE__ , __FUNCTION__ , __LINE__ )
+
+
 // возвращает колличество символов в строке begin
 size_t strlen_(const char *begin);
 
@@ -13,7 +17,7 @@ size_t strlen_(const char *begin);
 // расположенным на ленте памяти между адресами begin
 // и end не включая end.
 // Если символ не найден, возвращается значение end.
-char* find(char *begin, char *end, int ch);
+char *find(char *begin, char *end, int ch);
 
 // возвращает указатель на первый символ,
 // отличный от пробельных, расположенный на ленте памяти,
@@ -71,5 +75,7 @@ void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line);
 
+// возвращает указатель на последний символ строки begin
+char *getEndOfString(char *begin);
 
 #endif

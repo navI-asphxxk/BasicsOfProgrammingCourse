@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/bitset/bitset.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj"
+  "C:/Users/maksi/CLionProjects/cource/libs/data_structures/main.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/main.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/ordered_array_set/ordered_array_set.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/string_.c.obj"
