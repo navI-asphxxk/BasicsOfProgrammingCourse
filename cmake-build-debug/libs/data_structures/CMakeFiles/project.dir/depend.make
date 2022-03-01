@@ -4,5 +4,6 @@
 libs/data_structures/CMakeFiles/project.dir/main.c.obj: \
  ../libs/data_structures/main.c \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/digitsToStartAndReverseThem.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h

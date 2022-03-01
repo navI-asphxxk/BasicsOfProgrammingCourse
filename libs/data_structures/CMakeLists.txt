@@ -8,7 +8,9 @@ add_library(data_structures
         string/string_.c string/string_.h
         main.c
         string/tasks/removeNonLetters.h
-        string/tasks/removeAdjacentEqualLetters.h)
+        string/tasks/removeAdjacentEqualLetters.h
+        string/tasks/digitsToStartAndReverseThem.h
+        string/tasks/digitsToStartWithSave.h)
 
 target_link_libraries(data_structures algorithms)
 
@@ -28,7 +30,9 @@ add_executable(project main.c)
 # создаём библиотеку
 add_library(str string/string_.h string/string_.c
         string/tasks/removeNonLetters.h
-        string/tasks/removeAdjacentEqualLetters.h)
+        string/tasks/removeAdjacentEqualLetters.h
+        string/tasks/digitsToStartAndReverseThem.h
+        string/tasks/digitsToStartWithSave.h)
 
 
 # описываем, что для запуска project потребуется сборка tasks
