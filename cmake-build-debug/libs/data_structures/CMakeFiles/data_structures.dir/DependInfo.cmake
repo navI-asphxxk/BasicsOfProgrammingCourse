@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/bitset/bitset.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/ordered_array_set/ordered_array_set.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj"
+  "C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/string_.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/unordered_array_set/unordered_array_set.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vector.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/vector/vectorVoid.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
