@@ -18,5 +18,4 @@ void removeAdjacentEqualLetters(char *s) {
     *destination = '\0';
 }
 
-
 #endif
