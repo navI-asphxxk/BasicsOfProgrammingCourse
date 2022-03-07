@@ -14,7 +14,7 @@ add_library(data_structures
         string/tasks/replaceEachDigitToSpaces.h
         string/tasks/replaceAllWords1ToWord2.h
         string/tasks/isWordsOrderedLexically.h
-        string/tasks/reverseEachWord.h)
+        string/tasks/reverseEachWord.h string/tasks/countPalidromes.h)
 
 target_link_libraries(data_structures algorithms)
 

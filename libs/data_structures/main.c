@@ -7,6 +7,7 @@
 #include "string/tasks/replaceEachDigitToSpaces.h"
 #include "string/tasks/replaceAllWords1ToWord2.h"
 #include "string/tasks/reverseEachWord.h"
+#include "string/tasks/countPalidromes.h"
 
 int main() {
     test_removeNonLetters();
