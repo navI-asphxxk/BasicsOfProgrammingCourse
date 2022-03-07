@@ -5,6 +5,7 @@
 #include "string/tasks/digitsToStartAndReverseThem.h"
 #include "string/tasks/digitsToStartWithSave.h"
 #include "string/tasks/replaceEachDigitToSpaces.h"
+#include "string/tasks//replaceAllWords1ToWord2.h"
 
 
 int main() {

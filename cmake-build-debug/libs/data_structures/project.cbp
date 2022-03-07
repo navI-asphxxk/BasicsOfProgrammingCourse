@@ -164,6 +164,9 @@
 			<Option target="data_structures"/>
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/isWordsOrderedLexically.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h">
 			<Option target="data_structures"/>
 			<Option target="str"/>
@@ -171,6 +174,9 @@
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h">
 			<Option target="data_structures"/>
 			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceAllWords1ToWord2.h">
+			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceEachDigitToSpaces.h">
 			<Option target="data_structures"/>
