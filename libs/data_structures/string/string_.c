@@ -109,7 +109,7 @@ char *getEndOfString(char *begin) {
 
 int getWord(char *beginSearch, WordDescriptor *word) {
     word->begin = findNonSpace(beginSearch);
-    if (*word->begin == '\0 ')
+    if (*word->begin == '\0')
         return 0;
 
     word->end = findSpace(word->begin);
@@ -124,3 +124,6 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     word->begin = findSpaceReverse(word->end, rend) + 1;
     return true;
 }
+
+
+

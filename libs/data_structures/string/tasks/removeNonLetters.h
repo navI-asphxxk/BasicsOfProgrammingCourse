@@ -1,6 +1,8 @@
 #ifndef INC_REMOVENONLETTERS_H
 #define INC_REMOVENONLETTERS_H
 
+#include "../string_.h"
+
 void removeNonLetters(char *s) {
     char *endSource = getEndOfString(s);
     char *destination = copyIf(s, endSource, s, isgraph);

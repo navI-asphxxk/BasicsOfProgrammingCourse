@@ -10,7 +10,7 @@ add_library(data_structures
         string/tasks/removeNonLetters.h
         string/tasks/removeAdjacentEqualLetters.h
         string/tasks/digitsToStartAndReverseThem.h
-        string/tasks/digitsToStartWithSave.h)
+        string/tasks/digitsToStartWithSave.h string/tasks/replaceEachDigitToSpaces.h)
 
 target_link_libraries(data_structures algorithms)
 

@@ -1,6 +1,8 @@
 #ifndef INC_REMOVEADJACENTEQUALLETTERS_H
 #define INC_REMOVEADJACENTEQUALLETTERS_H
 
+#include "../string_.h"
+
 void removeAdjacentEqualLetters(char *s) {
     char *begin = s;
     char *destination = begin;
