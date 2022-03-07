@@ -129,5 +129,24 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
     return strcmp(w1.begin, w2.begin);
 }
 
+void getBagOfWords(BagOfWords *bag, char *s) {
+    char *beginSearch = s;
+    bag->size = 0;
+    WordDescriptor word;
+    while (getWord(beginSearch, &word)) {
+        bag->words[bag->size] = word;
+        bag->size++;
+        beginSearch = word.end;
+    }
+}
 
+char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination) {
+    while (rbeginSource != rendSource) {
+        *beginDestination++ = *rbeginSource;
+
+        rbeginSource--;
+    }
+
+    return beginDestination;
+}
 

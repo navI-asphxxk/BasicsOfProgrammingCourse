@@ -5,17 +5,24 @@
 #include <stdbool.h>
 #include <ctype.h>
 #include <memory.h>
+#include <limits.h>
 
+#define MAX_N_WORDS_IN_STRING 100
 #define MAX_STRING_SIZE 100
 #define ASSERT_STRING(expected, got) assertString( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
 
-char _stringBuffer [ MAX_STRING_SIZE + 1];
+char _stringBuffer[MAX_STRING_SIZE + 1];
 
 typedef struct WordDescriptor {
     char *begin; // позиция начала слова
     char *end; // позиция первого символа, после последнего символа слова
 } WordDescriptor;
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
 
 // возвращает колличество символов в строке begin
 size_t strlen_(const char *begin);
@@ -94,5 +101,9 @@ int getWord(char *beginSearch, WordDescriptor *word);
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
+
+void getBagOfWords(BagOfWords *bag, char *s);
+
+char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination);
 
 #endif

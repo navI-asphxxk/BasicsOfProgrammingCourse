@@ -13,7 +13,8 @@ add_library(data_structures
         string/tasks/digitsToStartWithSave.h
         string/tasks/replaceEachDigitToSpaces.h
         string/tasks/replaceAllWords1ToWord2.h
-        string/tasks/isWordsOrderedLexically.h)
+        string/tasks/isWordsOrderedLexically.h
+        string/tasks/reverseEachWord.h)
 
 target_link_libraries(data_structures algorithms)
 
@@ -38,7 +39,8 @@ add_library(str string/string_.h string/string_.c
         string/tasks/digitsToStartWithSave.h
         string/tasks/replaceEachDigitToSpaces.h
         string/tasks/replaceAllWords1ToWord2.h
-        string/tasks/isWordsOrderedLexically.h)
+        string/tasks/isWordsOrderedLexically.h
+        string/tasks/reverseEachWord.h)
 
 
 # описываем, что для запуска project потребуется сборка tasks
