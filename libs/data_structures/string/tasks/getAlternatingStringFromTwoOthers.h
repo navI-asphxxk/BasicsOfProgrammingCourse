@@ -7,11 +7,11 @@ void getAlternatingStringFromTwoOthers0(char *s, char *s1, char *s2) {
     char *beginCopy = s;
     char *beginSearch1 = s1, *beginSearch2 = s2;
     WordDescriptor word1, word2;
-    bool isW1Found = true, isW2Found;
+    bool isW1Found, isW2Found;
 
-    while (isW1Found || isW2Found) {
-        isW1Found = getWord(beginSearch1, &word1);
-        isW2Found = getWord(beginSearch2, &word2);
+    while ((isW1Found = getWord(beginSearch1, &word1)),
+            (isW2Found = getWord(beginSearch2, &word2)),
+            isW1Found || isW2Found) {
 
         if (isW1Found) {
             beginCopy = copy(word1.begin, word1.end, beginCopy);

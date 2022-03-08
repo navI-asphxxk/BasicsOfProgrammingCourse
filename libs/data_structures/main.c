@@ -9,6 +9,7 @@
 #include "string/tasks/reverseEachWord.h"
 #include "string/tasks/countPalidromes.h"
 #include "string/tasks/getAlternatingStringFromTwoOthers.h"
+#include "string/tasks/reverseWordsInString.h"
 
 int main() {
     test_removeNonLetters();
