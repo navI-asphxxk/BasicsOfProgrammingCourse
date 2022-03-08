@@ -14,6 +14,7 @@
 #include "string/tasks/getLastWordOfFirstStringInSecondString.h"
 #include "string/tasks/areSameWordsInString.h"
 #include "string/tasks/areTwoWordsWithSameLetters.h"
+#include "string/tasks/removeAllWordsLikeLastInString.h"
 
 int main() {
     test_removeNonLetters();

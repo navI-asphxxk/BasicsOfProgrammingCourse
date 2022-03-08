@@ -19,7 +19,10 @@ add_library(data_structures
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
         string/tasks/printWordBeforeFirstWordWithA.h
-        string/tasks/getLastWordOfFirstStringInSecondString.h string/tasks/areSameWordsInString.h string/tasks/areTwoWordsWithSameLetters.h)
+        string/tasks/getLastWordOfFirstStringInSecondString.h
+        string/tasks/areSameWordsInString.h
+        string/tasks/areTwoWordsWithSameLetters.h
+        string/tasks/removeAllWordsLikeLastInString.h)
 
 target_link_libraries(data_structures algorithms)
 
@@ -50,7 +53,10 @@ add_library(str string/string_.h string/string_.c
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
         string/tasks/printWordBeforeFirstWordWithA.h
-        string/tasks/getLastWordOfFirstStringInSecondString.h)
+        string/tasks/getLastWordOfFirstStringInSecondString.h
+        string/tasks/areSameWordsInString.h
+        string/tasks/areTwoWordsWithSameLetters.h
+        string/tasks/removeAllWordsLikeLastInString.h)
 
 
 # описываем, что для запуска project потребуется сборка tasks
