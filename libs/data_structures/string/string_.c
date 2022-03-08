@@ -161,3 +161,7 @@ bool isPalindrome(char *begin, char *end) {
     }
     return true;
 }
+
+void wordDescriptorToString(WordDescriptor word, char *destination) {
+    *copy(word.begin, word.end, destination) = '\0';
+}

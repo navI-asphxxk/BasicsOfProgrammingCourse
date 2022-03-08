@@ -9,9 +9,6 @@ void removeNonLetters(char *s) {
     *destination = '\0';
 }
 
-
-// TESTS
-
 void test_removeNonLetters_emptyString() {
     char s[] = "";
     removeNonLetters(s);

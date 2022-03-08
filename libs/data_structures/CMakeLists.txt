@@ -18,7 +18,7 @@ add_library(data_structures
         string/tasks/countPalidromes.h
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
-        string/tasks/printWordBeforeFirstWordWithA.h)
+        string/tasks/printWordBeforeFirstWordWithA.h string/tasks/getLastWordOfFirstStringInSecondString.h)
 
 target_link_libraries(data_structures algorithms)
 

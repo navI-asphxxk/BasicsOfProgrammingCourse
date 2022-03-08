@@ -8,6 +8,7 @@ libs/data_structures/CMakeFiles/project.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/digitsToStartAndReverseThem.h \
  ../libs/data_structures/string/tasks/digitsToStartWithSave.h \
  ../libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h \
+ ../libs/data_structures/string/tasks/getLastWordOfFirstStringInSecondString.h \
  ../libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \

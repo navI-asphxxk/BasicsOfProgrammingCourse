@@ -21,6 +21,4 @@ void digitToStartForEveryWord(char *s) {
     }
 }
 
-
-
 #endif

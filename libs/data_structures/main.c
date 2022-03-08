@@ -11,10 +11,12 @@
 #include "string/tasks/getAlternatingStringFromTwoOthers.h"
 #include "string/tasks/reverseWordsInString.h"
 #include "string/tasks/printWordBeforeFirstWordWithA.h"
+#include "string/tasks/getLastWordOfFirstStringInSecondString.h"
 
 int main() {
     test_removeNonLetters();
     testAll_getWordBeforeFirstWordWithA();
+    test_getLastWordInFirstStringInTheSecondString();
 
     return 0;
 }
