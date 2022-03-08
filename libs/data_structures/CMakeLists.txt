@@ -18,7 +18,8 @@ add_library(data_structures
         string/tasks/countPalidromes.h
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
-        string/tasks/printWordBeforeFirstWordWithA.h string/tasks/getLastWordOfFirstStringInSecondString.h)
+        string/tasks/printWordBeforeFirstWordWithA.h
+        string/tasks/getLastWordOfFirstStringInSecondString.h string/tasks/areSameWordsInString.h)
 
 target_link_libraries(data_structures algorithms)
 
@@ -48,7 +49,8 @@ add_library(str string/string_.h string/string_.c
         string/tasks/countPalidromes.h
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
-        string/tasks/printWordBeforeFirstWordWithA.h)
+        string/tasks/printWordBeforeFirstWordWithA.h
+        string/tasks/getLastWordOfFirstStringInSecondString.h)
 
 
 # описываем, что для запуска project потребуется сборка tasks

@@ -3,7 +3,7 @@
 
 #include "../string_.h"
 
-void replaceAllWords1ToWord2 (char *source, char *w1, char *w2) {
+void replaceAllWords1ToWord2(char *source, char *w1, char *w2) {
     size_t w1Size = strlen_(w1);
     size_t w2Size = strlen_(w2);
     WordDescriptor word1 = {w1, w1 + w1Size};
@@ -25,9 +25,8 @@ void replaceAllWords1ToWord2 (char *source, char *w1, char *w2) {
                 copy(word2.begin, word2.end, writePtr);
                 readPtr += w1Size;
                 writePtr += w2Size;
-            } else {
+            } else
                 *writePtr++ = *readPtr++;
-            }
         } else
             *writePtr++ = *readPtr++;
     }

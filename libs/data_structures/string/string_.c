@@ -165,3 +165,12 @@ bool isPalindrome(char *begin, char *end) {
 void wordDescriptorToString(WordDescriptor word, char *destination) {
     *copy(word.begin, word.end, destination) = '\0';
 }
+
+void printWord(WordDescriptor word) {
+    while (word.begin != word.end) {
+        putchar(*word.begin);
+        word.begin++;
+    }
+
+    printf("\n");
+}

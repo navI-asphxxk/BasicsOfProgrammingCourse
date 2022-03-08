@@ -26,6 +26,9 @@ typedef struct BagOfWords {
     size_t size;
 } BagOfWords;
 
+BagOfWords _bag;
+BagOfWords _bag2;
+
 // возвращает колличество символов в строке begin
 size_t strlen_(const char *begin);
 
@@ -111,5 +114,7 @@ char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestina
 bool isPalindrome(char *begin, char *end);
 
 void wordDescriptorToString(WordDescriptor word, char *destination);
+
+void printWord(WordDescriptor word);
 
 #endif

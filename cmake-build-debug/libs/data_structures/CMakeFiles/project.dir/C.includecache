@@ -35,6 +35,8 @@ string/tasks/printWordBeforeFirstWordWithA.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
 string/tasks/getLastWordOfFirstStringInSecondString.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getLastWordOfFirstStringInSecondString.h
+string/tasks/areSameWordsInString.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/areSameWordsInString.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 stdio.h
@@ -49,6 +51,10 @@ limits.h
 -
 assert.h
 -
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/areSameWordsInString.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h
 ../string_.h
