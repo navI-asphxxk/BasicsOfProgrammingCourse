@@ -19,4 +19,8 @@ ctype.h
 -
 memory.h
 -
+limits.h
+-
+assert.h
+-
 

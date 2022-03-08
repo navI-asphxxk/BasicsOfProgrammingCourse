@@ -17,6 +17,22 @@ string/tasks/removeAdjacentEqualLetters.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 string/tasks/digitsToStartAndReverseThem.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartAndReverseThem.h
+string/tasks/digitsToStartWithSave.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartWithSave.h
+string/tasks/replaceEachDigitToSpaces.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceEachDigitToSpaces.h
+string/tasks/replaceAllWords1ToWord2.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceAllWords1ToWord2.h
+string/tasks/reverseEachWord.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseEachWord.h
+string/tasks/countPalidromes.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h
+string/tasks/getAlternatingStringFromTwoOthers.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h
+string/tasks/reverseWordsInString.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseWordsInString.h
+string/tasks/printWordBeforeFirstWordWithA.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 stdio.h
@@ -27,12 +43,52 @@ ctype.h
 -
 memory.h
 -
+limits.h
+-
+assert.h
+-
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartAndReverseThem.h
 ../string_.h
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartWithSave.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 
 C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceAllWords1ToWord2.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceEachDigitToSpaces.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseEachWord.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseWordsInString.h
+../string_.h
+C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
 

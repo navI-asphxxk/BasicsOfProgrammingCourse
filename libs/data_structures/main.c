@@ -10,9 +10,11 @@
 #include "string/tasks/countPalidromes.h"
 #include "string/tasks/getAlternatingStringFromTwoOthers.h"
 #include "string/tasks/reverseWordsInString.h"
+#include "string/tasks/printWordBeforeFirstWordWithA.h"
 
 int main() {
     test_removeNonLetters();
+    testAll_getWordBeforeFirstWordWithA();
 
     return 0;
 }

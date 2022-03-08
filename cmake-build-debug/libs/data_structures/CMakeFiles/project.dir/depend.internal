@@ -4,6 +4,14 @@
 libs/data_structures/CMakeFiles/project.dir/main.c.obj
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/main.c
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartAndReverseThem.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartWithSave.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceAllWords1ToWord2.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceEachDigitToSpaces.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseEachWord.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseWordsInString.h

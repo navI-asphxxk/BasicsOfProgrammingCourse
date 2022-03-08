@@ -14,7 +14,11 @@ add_library(data_structures
         string/tasks/replaceEachDigitToSpaces.h
         string/tasks/replaceAllWords1ToWord2.h
         string/tasks/isWordsOrderedLexically.h
-        string/tasks/reverseEachWord.h string/tasks/countPalidromes.h string/tasks/getAlternatingStringFromTwoOthers.h string/tasks/reverseWordsInString.h)
+        string/tasks/reverseEachWord.h
+        string/tasks/countPalidromes.h
+        string/tasks/getAlternatingStringFromTwoOthers.h
+        string/tasks/reverseWordsInString.h
+        string/tasks/printWordBeforeFirstWordWithA.h)
 
 target_link_libraries(data_structures algorithms)
 
@@ -40,7 +44,11 @@ add_library(str string/string_.h string/string_.c
         string/tasks/replaceEachDigitToSpaces.h
         string/tasks/replaceAllWords1ToWord2.h
         string/tasks/isWordsOrderedLexically.h
-        string/tasks/reverseEachWord.h)
+        string/tasks/reverseEachWord.h
+        string/tasks/countPalidromes.h
+        string/tasks/getAlternatingStringFromTwoOthers.h
+        string/tasks/reverseWordsInString.h
+        string/tasks/printWordBeforeFirstWordWithA.h)
 
 
 # описываем, что для запуска project потребуется сборка tasks

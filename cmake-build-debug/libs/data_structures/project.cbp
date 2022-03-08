@@ -158,6 +158,7 @@
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h">
 			<Option target="data_structures"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartAndReverseThem.h">
 			<Option target="data_structures"/>
@@ -169,8 +170,13 @@
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h">
 			<Option target="data_structures"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/isWordsOrderedLexically.h">
+			<Option target="data_structures"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h">
 			<Option target="data_structures"/>
 			<Option target="str"/>
 		</Unit>
@@ -196,6 +202,7 @@
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseWordsInString.h">
 			<Option target="data_structures"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/unordered_array_set/unordered_array_set.c">
 			<Option target="data_structures"/>

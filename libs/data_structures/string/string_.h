@@ -6,7 +6,9 @@
 #include <ctype.h>
 #include <memory.h>
 #include <limits.h>
+#include <assert.h>
 
+#define MAX_WORD_SIZE 10
 #define MAX_N_WORDS_IN_STRING 100
 #define MAX_STRING_SIZE 100
 #define ASSERT_STRING(expected, got) assertString( expected , got , \
