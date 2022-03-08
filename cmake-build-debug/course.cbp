@@ -274,6 +274,9 @@
 			<Option target="data_structures"/>
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/isWordsOrderedLexically.h">
 			<Option target="data_structures"/>
 			<Option target="str"/>
