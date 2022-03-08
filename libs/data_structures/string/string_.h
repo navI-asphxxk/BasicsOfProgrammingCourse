@@ -7,6 +7,7 @@
 #include <memory.h>
 #include <limits.h>
 #include <assert.h>
+#include <stdlib.h>
 
 #define MAX_WORD_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100

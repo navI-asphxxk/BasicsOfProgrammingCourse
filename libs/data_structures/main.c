@@ -13,6 +13,7 @@
 #include "string/tasks/printWordBeforeFirstWordWithA.h"
 #include "string/tasks/getLastWordOfFirstStringInSecondString.h"
 #include "string/tasks/areSameWordsInString.h"
+#include "string/tasks/areTwoWordsWithSameLetters.h"
 
 int main() {
     test_removeNonLetters();

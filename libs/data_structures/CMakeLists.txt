@@ -19,7 +19,7 @@ add_library(data_structures
         string/tasks/getAlternatingStringFromTwoOthers.h
         string/tasks/reverseWordsInString.h
         string/tasks/printWordBeforeFirstWordWithA.h
-        string/tasks/getLastWordOfFirstStringInSecondString.h string/tasks/areSameWordsInString.h)
+        string/tasks/getLastWordOfFirstStringInSecondString.h string/tasks/areSameWordsInString.h string/tasks/areTwoWordsWithSameLetters.h)
 
 target_link_libraries(data_structures algorithms)
 
