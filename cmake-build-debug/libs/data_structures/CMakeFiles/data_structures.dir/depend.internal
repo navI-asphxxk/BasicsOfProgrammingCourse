@@ -7,6 +7,21 @@ libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj
 libs/data_structures/CMakeFiles/data_structures.dir/main.c.obj
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/main.c
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/string_.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/areSameWordsInString.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/areTwoWordsWithSameLetters.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/countPalidromes.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartAndReverseThem.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/digitsToStartWithSave.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getAlternatingStringFromTwoOthers.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/getLastWordOfFirstStringInSecondString.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeAllWordsLikeLastInString.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/removeNonLetters.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceAllWords1ToWord2.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/replaceEachDigitToSpaces.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseEachWord.h
+ C:/Users/maksi/CLionProjects/cource/libs/data_structures/string/tasks/reverseWordsInString.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.c
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.h

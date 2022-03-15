@@ -68,4 +68,6 @@ void deleteIf_(int *a, size_t *n, int (*deletePredicate)(int));
 
 int getSum_(const int *a, const int n);
 
+int isOrdered(const int *a, const size_t n);
+
 #endif

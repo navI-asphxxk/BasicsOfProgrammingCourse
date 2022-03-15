@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="project1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\data_structures\;CMake Files\libs\algorithms\;CMake Files\libs\time_measuring\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="time_measuring">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/libtime_measuring.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 time_measuring"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="time_measuring/fast">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/libtime_measuring.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 time_measuring/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project1">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/project1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 project1"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project1/fast">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/project1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 project1/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="str1">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/libstr1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 str1"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="str1/fast">
+				<Option output="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/libstr1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 str1/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.c">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.c">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/time_measuring/main.c">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.c">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+			<Option target="str1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h">
+			<Option target="time_measuring"/>
+			<Option target="project1"/>
+			<Option target="str1"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/data_structures/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\data_structures\"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/algorithms/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\algorithms\"/>
+		</Unit>
+		<Unit filename="C:/Users/maksi/CLionProjects/cource/libs/time_measuring/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\time_measuring\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

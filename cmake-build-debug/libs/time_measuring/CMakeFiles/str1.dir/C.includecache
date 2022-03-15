@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
+stdio.h
+-
+
+C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.c
+sorts.h
+C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
+
+C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+../../algorithms/algorithm.h
+C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
+

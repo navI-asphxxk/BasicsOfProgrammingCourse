@@ -11,3 +11,8 @@ C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/data_structures/CMake
 C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir
 C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/algorithms/CMakeFiles/edit_cache.dir
 C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/algorithms/CMakeFiles/rebuild_cache.dir
+C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/CMakeFiles/time_measuring.dir
+C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/CMakeFiles/rebuild_cache.dir
+C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/CMakeFiles/project1.dir
+C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/CMakeFiles/str1.dir
+C:/Users/maksi/CLionProjects/cource/cmake-build-debug/libs/time_measuring/CMakeFiles/edit_cache.dir

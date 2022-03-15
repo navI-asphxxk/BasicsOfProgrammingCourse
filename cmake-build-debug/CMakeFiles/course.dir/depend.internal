@@ -10,7 +10,12 @@ CMakeFiles/course.dir/libs/algorithms/array/array.c.obj
 CMakeFiles/course.dir/libs/data_structures/bitset/bitset.c.obj
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/bitset/bitset.c
  C:/Users/maksi/CLionProjects/cource/libs/data_structures/bitset/bitset.h
+CMakeFiles/course.dir/libs/time_measuring/sorts/sorts.c.obj
+ C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
+ C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.c
+ C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
 CMakeFiles/course.dir/main.c.obj
+ C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
  C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
- C:/Users/maksi/CLionProjects/cource/libs/data_structures/matrix/matrix.h
+ C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
  C:/Users/maksi/CLionProjects/cource/main.c

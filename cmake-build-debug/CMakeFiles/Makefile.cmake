@@ -34,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../libs/CMakeLists.txt"
   "../libs/algorithms/CMakeLists.txt"
   "../libs/data_structures/CMakeLists.txt"
+  "../libs/time_measuring/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -48,6 +49,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/time_measuring/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -57,4 +59,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "libs/data_structures/CMakeFiles/project.dir/DependInfo.cmake"
   "libs/data_structures/CMakeFiles/str.dir/DependInfo.cmake"
   "libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
+  "libs/time_measuring/CMakeFiles/time_measuring.dir/DependInfo.cmake"
+  "libs/time_measuring/CMakeFiles/project1.dir/DependInfo.cmake"
+  "libs/time_measuring/CMakeFiles/str1.dir/DependInfo.cmake"
   )

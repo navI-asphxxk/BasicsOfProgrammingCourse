@@ -180,6 +180,45 @@ algorithms/fast:
 	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
 .PHONY : algorithms/fast
 
+#=============================================================================
+# Target rules for targets named time_measuring
+
+# Build rule for target.
+time_measuring: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 time_measuring
+.PHONY : time_measuring
+
+# fast build rule for target.
+time_measuring/fast:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\time_measuring.dir\build.make libs/time_measuring/CMakeFiles/time_measuring.dir/build
+.PHONY : time_measuring/fast
+
+#=============================================================================
+# Target rules for targets named project1
+
+# Build rule for target.
+project1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 project1
+.PHONY : project1
+
+# fast build rule for target.
+project1/fast:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\project1.dir\build.make libs/time_measuring/CMakeFiles/project1.dir/build
+.PHONY : project1/fast
+
+#=============================================================================
+# Target rules for targets named str1
+
+# Build rule for target.
+str1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 str1
+.PHONY : str1
+
+# fast build rule for target.
+str1/fast:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\str1.dir\build.make libs/time_measuring/CMakeFiles/str1.dir/build
+.PHONY : str1/fast
+
 libs/algorithms/algorithm.obj: libs/algorithms/algorithm.c.obj
 .PHONY : libs/algorithms/algorithm.obj
 
@@ -252,6 +291,30 @@ libs/data_structures/bitset/bitset.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/libs/data_structures/bitset/bitset.c.s
 .PHONY : libs/data_structures/bitset/bitset.c.s
 
+libs/time_measuring/sorts/sorts.obj: libs/time_measuring/sorts/sorts.c.obj
+.PHONY : libs/time_measuring/sorts/sorts.obj
+
+# target to build an object file
+libs/time_measuring/sorts/sorts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/libs/time_measuring/sorts/sorts.c.obj
+.PHONY : libs/time_measuring/sorts/sorts.c.obj
+
+libs/time_measuring/sorts/sorts.i: libs/time_measuring/sorts/sorts.c.i
+.PHONY : libs/time_measuring/sorts/sorts.i
+
+# target to preprocess a source file
+libs/time_measuring/sorts/sorts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/libs/time_measuring/sorts/sorts.c.i
+.PHONY : libs/time_measuring/sorts/sorts.c.i
+
+libs/time_measuring/sorts/sorts.s: libs/time_measuring/sorts/sorts.c.s
+.PHONY : libs/time_measuring/sorts/sorts.s
+
+# target to generate assembly for a file
+libs/time_measuring/sorts/sorts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/libs/time_measuring/sorts/sorts.c.s
+.PHONY : libs/time_measuring/sorts/sorts.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -288,7 +351,10 @@ help:
 	@echo ... course
 	@echo ... data_structures
 	@echo ... project
+	@echo ... project1
 	@echo ... str
+	@echo ... str1
+	@echo ... time_measuring
 	@echo ... libs/algorithms/algorithm.obj
 	@echo ... libs/algorithms/algorithm.i
 	@echo ... libs/algorithms/algorithm.s
@@ -298,6 +364,9 @@ help:
 	@echo ... libs/data_structures/bitset/bitset.obj
 	@echo ... libs/data_structures/bitset/bitset.i
 	@echo ... libs/data_structures/bitset/bitset.s
+	@echo ... libs/time_measuring/sorts/sorts.obj
+	@echo ... libs/time_measuring/sorts/sorts.i
+	@echo ... libs/time_measuring/sorts/sorts.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

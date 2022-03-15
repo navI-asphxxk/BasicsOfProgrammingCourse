@@ -1,0 +1,2 @@
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libtime_measuring.a CMakeFiles/time_measuring.dir/sorts/sorts.c.obj CMakeFiles/time_measuring.dir/main.c.obj CMakeFiles/time_measuring.dir/__/algorithms/array/array.c.obj CMakeFiles/time_measuring.dir/__/algorithms/algorithm.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libtime_measuring.a

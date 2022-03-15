@@ -81,16 +81,19 @@ clean: libs/clean
 # Recursive "all" directory target.
 libs/all: libs/data_structures/all
 libs/all: libs/algorithms/all
+libs/all: libs/time_measuring/all
 .PHONY : libs/all
 
 # Recursive "preinstall" directory target.
 libs/preinstall: libs/data_structures/preinstall
 libs/preinstall: libs/algorithms/preinstall
+libs/preinstall: libs/time_measuring/preinstall
 .PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
 libs/clean: libs/data_structures/clean
 libs/clean: libs/algorithms/clean
+libs/clean: libs/time_measuring/clean
 .PHONY : libs/clean
 
 #=============================================================================
@@ -128,6 +131,25 @@ libs/data_structures/clean: libs/data_structures/CMakeFiles/str.dir/clean
 .PHONY : libs/data_structures/clean
 
 #=============================================================================
+# Directory level rules for directory libs/time_measuring
+
+# Recursive "all" directory target.
+libs/time_measuring/all: libs/time_measuring/CMakeFiles/time_measuring.dir/all
+libs/time_measuring/all: libs/time_measuring/CMakeFiles/project1.dir/all
+libs/time_measuring/all: libs/time_measuring/CMakeFiles/str1.dir/all
+.PHONY : libs/time_measuring/all
+
+# Recursive "preinstall" directory target.
+libs/time_measuring/preinstall:
+.PHONY : libs/time_measuring/preinstall
+
+# Recursive "clean" directory target.
+libs/time_measuring/clean: libs/time_measuring/CMakeFiles/time_measuring.dir/clean
+libs/time_measuring/clean: libs/time_measuring/CMakeFiles/project1.dir/clean
+libs/time_measuring/clean: libs/time_measuring/CMakeFiles/str1.dir/clean
+.PHONY : libs/time_measuring/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/course.dir
 
 # All Build rule for target.
@@ -135,12 +157,12 @@ CMakeFiles/course.dir/all: libs/data_structures/CMakeFiles/data_structures.dir/a
 CMakeFiles/course.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8 "Built target course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9 "Built target course"
 .PHONY : CMakeFiles/course.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/course.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/course.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/course.dir/rule
@@ -161,7 +183,7 @@ CMakeFiles/course.dir/clean:
 libs/data_structures/CMakeFiles/data_structures.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17 "Built target data_structures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18 "Built target data_structures"
 .PHONY : libs/data_structures/CMakeFiles/data_structures.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,7 +209,7 @@ libs/data_structures/CMakeFiles/data_structures.dir/clean:
 libs/data_structures/CMakeFiles/project.dir/all: libs/data_structures/CMakeFiles/str.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\project.dir\build.make libs/data_structures/CMakeFiles/project.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\project.dir\build.make libs/data_structures/CMakeFiles/project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=18,19 "Built target project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target project"
 .PHONY : libs/data_structures/CMakeFiles/project.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,7 +235,7 @@ libs/data_structures/CMakeFiles/project.dir/clean:
 libs/data_structures/CMakeFiles/str.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\str.dir\build.make libs/data_structures/CMakeFiles/str.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\str.dir\build.make libs/data_structures/CMakeFiles/str.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=20,21 "Built target str"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=26,27 "Built target str"
 .PHONY : libs/data_structures/CMakeFiles/str.dir/all
 
 # Build rule for subdir invocation for target.
@@ -257,6 +279,84 @@ algorithms: libs/algorithms/CMakeFiles/algorithms.dir/rule
 libs/algorithms/CMakeFiles/algorithms.dir/clean:
 	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/clean
 .PHONY : libs/algorithms/CMakeFiles/algorithms.dir/clean
+
+#=============================================================================
+# Target rules for target libs/time_measuring/CMakeFiles/time_measuring.dir
+
+# All Build rule for target.
+libs/time_measuring/CMakeFiles/time_measuring.dir/all: libs/algorithms/CMakeFiles/algorithms.dir/all
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\time_measuring.dir\build.make libs/time_measuring/CMakeFiles/time_measuring.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\time_measuring.dir\build.make libs/time_measuring/CMakeFiles/time_measuring.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=30,31,32,33,34 "Built target time_measuring"
+.PHONY : libs/time_measuring/CMakeFiles/time_measuring.dir/all
+
+# Build rule for subdir invocation for target.
+libs/time_measuring/CMakeFiles/time_measuring.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/time_measuring/CMakeFiles/time_measuring.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 0
+.PHONY : libs/time_measuring/CMakeFiles/time_measuring.dir/rule
+
+# Convenience name for target.
+time_measuring: libs/time_measuring/CMakeFiles/time_measuring.dir/rule
+.PHONY : time_measuring
+
+# clean rule for target.
+libs/time_measuring/CMakeFiles/time_measuring.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\time_measuring.dir\build.make libs/time_measuring/CMakeFiles/time_measuring.dir/clean
+.PHONY : libs/time_measuring/CMakeFiles/time_measuring.dir/clean
+
+#=============================================================================
+# Target rules for target libs/time_measuring/CMakeFiles/project1.dir
+
+# All Build rule for target.
+libs/time_measuring/CMakeFiles/project1.dir/all: libs/time_measuring/CMakeFiles/str1.dir/all
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\project1.dir\build.make libs/time_measuring/CMakeFiles/project1.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\project1.dir\build.make libs/time_measuring/CMakeFiles/project1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=21,22,23,24,25 "Built target project1"
+.PHONY : libs/time_measuring/CMakeFiles/project1.dir/all
+
+# Build rule for subdir invocation for target.
+libs/time_measuring/CMakeFiles/project1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/time_measuring/CMakeFiles/project1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 0
+.PHONY : libs/time_measuring/CMakeFiles/project1.dir/rule
+
+# Convenience name for target.
+project1: libs/time_measuring/CMakeFiles/project1.dir/rule
+.PHONY : project1
+
+# clean rule for target.
+libs/time_measuring/CMakeFiles/project1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\project1.dir\build.make libs/time_measuring/CMakeFiles/project1.dir/clean
+.PHONY : libs/time_measuring/CMakeFiles/project1.dir/clean
+
+#=============================================================================
+# Target rules for target libs/time_measuring/CMakeFiles/str1.dir
+
+# All Build rule for target.
+libs/time_measuring/CMakeFiles/str1.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\str1.dir\build.make libs/time_measuring/CMakeFiles/str1.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\str1.dir\build.make libs/time_measuring/CMakeFiles/str1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles --progress-num=28,29 "Built target str1"
+.PHONY : libs/time_measuring/CMakeFiles/str1.dir/all
+
+# Build rule for subdir invocation for target.
+libs/time_measuring/CMakeFiles/str1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/time_measuring/CMakeFiles/str1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maksi\CLionProjects\cource\cmake-build-debug\CMakeFiles 0
+.PHONY : libs/time_measuring/CMakeFiles/str1.dir/rule
+
+# Convenience name for target.
+str1: libs/time_measuring/CMakeFiles/str1.dir/rule
+.PHONY : str1
+
+# clean rule for target.
+libs/time_measuring/CMakeFiles/str1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs\time_measuring\CMakeFiles\str1.dir\build.make libs/time_measuring/CMakeFiles/str1.dir/clean
+.PHONY : libs/time_measuring/CMakeFiles/str1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

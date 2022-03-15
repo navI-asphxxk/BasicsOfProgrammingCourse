@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/CMakeFiles/course.dir/libs/algorithms/algorithm.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/CMakeFiles/course.dir/libs/algorithms/array/array.c.obj"
   "C:/Users/maksi/CLionProjects/cource/libs/data_structures/bitset/bitset.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/CMakeFiles/course.dir/libs/data_structures/bitset/bitset.c.obj"
+  "C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/CMakeFiles/course.dir/libs/time_measuring/sorts/sorts.c.obj"
   "C:/Users/maksi/CLionProjects/cource/main.c" "C:/Users/maksi/CLionProjects/cource/cmake-build-debug/CMakeFiles/course.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

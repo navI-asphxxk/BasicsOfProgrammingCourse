@@ -144,3 +144,12 @@ int getSum_(const int *a, const int n) {
     return sum;
 }
 
+int isOrdered(const int *a, const size_t n) {
+    for (size_t i = 1; i < n; i++) {
+        if (a[i] < a[i - 1])
+            return 0;
+    }
+
+    return 1;
+}
+
