@@ -6,31 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.c
-algorithm.h
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
-
 C:/Users/maksi/CLionProjects/cource/libs/algorithms/algorithm.h
 stdio.h
--
-
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.c
-array.h
-C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
-stdio.h
--
-limits.h
--
-assert.h
 -
 
 C:/Users/maksi/CLionProjects/cource/libs/algorithms/array/array.h
 stddef.h
 -
-
-C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.c
-sorts.h
-C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
 
 C:/Users/maksi/CLionProjects/cource/libs/time_measuring/sorts/sorts.h
 stdio.h
