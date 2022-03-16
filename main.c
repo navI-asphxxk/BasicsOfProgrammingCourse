@@ -48,7 +48,7 @@ void checkTime(void (*sortFunc )(int *, size_t),
                size_t size, char *experimentName) {
     static size_t runCounter = 1;
 // генерация последовательности
-    static int innerBuffer[100000];
+    static int innerBuffer[200000];
     generateFunc(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf("Name: %s\n", experimentName);
@@ -89,7 +89,7 @@ void checkNComps(unsigned long long (*sortFunc )(int *, size_t),
                  size_t size, char *experimentName) {
     static size_t runCounter = 1;
 // генерация последовательности
-    static int innerBuffer[100000];
+    static int innerBuffer[200000];
     generateFunc(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf(" Name : %s\n", experimentName);
@@ -124,14 +124,14 @@ void checkNComps(unsigned long long (*sortFunc )(int *, size_t),
 
 void timeExperiment() {
     SortFunc sorts[] = {
-            {bubbleSort,    "bubbleSort"},
-            {selectionSort, "selectionSort"},
+            //{bubbleSort,    "bubbleSort"},
+            //{selectionSort, "selectionSort"},
             {insertionSort, "insertionSort"},
-            {combSort,      "combSort"},
-            {shellSort, "shellSort"},
-            {radixSort, "radixSort"},
-            {mergeSort, "mergeSort"},
-            {qsort_, "qsort"},
+            //{combSort,      "combSort"}
+            //{shellSort, "shellSort"},
+            //{radixSort, "radixSort"},
+            //{mergeSort, "mergeSort"},
+            //{qsort_, "qsort"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
 
@@ -144,7 +144,7 @@ void timeExperiment() {
     const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
 
     // запись статистики в файл
-    for (size_t size = 10000; size <= 100000; size += 10000) {
+    for (size_t size = 200000; size <= 200000; size += 10000) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf("Size : %d\n", size);
         for (int i = 0; i < FUNCS_N; i++) {
@@ -348,14 +348,14 @@ long long getQsortNComps(int *array, const size_t n) {
 void NCompsExperiment() {
     // описание функций сортировки
     SortFuncNComps sorts[] = {
-            {getBubbleSortNComps,    "getBubbleSortNComps"},
-            {getSelectionSortNComps, "getSelectionSortNComps"},
-            {getInsertionSortNComps, "getInsertionSortNComps"},
-            {getCombSortNComps, "getCombSortNComps"},
-            {getShellSortNComps,     "getShellSortNComps"},
-            {getRadixSortNComps,     "getRadixSortNComps"},
+           // {getBubbleSortNComps,    "getBubbleSortNComps"},
+           // {getSelectionSortNComps, "getSelectionSortNComps"},
+           // {getInsertionSortNComps, "getInsertionSortNComps"},
+           // {getCombSortNComps, "getCombSortNComps"},
+           // {getShellSortNComps,     "getShellSortNComps"},
+           // {getRadixSortNComps,     "getRadixSortNComps"},
             {getMergeSortNComps,     "getMergeSortNComps"},
-            {getQsortNComps,     "getQsortNComps"}
+           // {getQsortNComps,     "getQsortNComps"}
     };
 
     const unsigned FUNCS_N = ARRAY_SIZE(sorts);
@@ -393,7 +393,7 @@ void NCompsExperiment() {
 }
 
 int main() {
-    NCompsExperiment();
+    timeExperiment();
 
     return 0;
 }
